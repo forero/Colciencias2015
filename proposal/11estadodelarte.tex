@@ -1,0 +1,145 @@
+
+\section{Estado del arte}
+% Revisión actual de la temática en el contexto nacional e
+% internacional, avances, desarrollos y tendencias. 
+
+\subsection{Pruebas observacionales de par\'ametros cosmol\'ogicos}
+Con la puesta en marcha de ambiciosos programas observacionales para
+cuantificar la Ener\'gia Oscura durante la siguiente d\'ecada, los
+esfuerzos te\'oricos se han  multiplicado para encontrar formas de
+medir la expansi\'on acelerada con alta precisi\'on. 
+Existen varios
+m\'etodos observacionales utilizados en la actualidad para hacer este
+tipo de mediciones. Entre ellos se destacan:
+
+\begin{enumerate}
+\item La escala de la Oscilaci\'on Ac\'ustica de Bariones (OAB).
+\item El crecimiento de estructura a trav\'es de las Distorsiones en
+  el Espacio de Redshift (DER) o Redshift Space Distortions (RSD).
+\item El bosque Lyman-$\alpha$ de cuásares distantes.
+\item Efecto de lente gravitacional d\'ebil.
+\item Mediciones de distancias con supernovas.
+\item Abundancia de c\'umulos de galaxias.
+\end{enumerate}
+
+Para misiones observacionales desde tierra los m\'etodos m\'as interesantes 
+son los primeros tres. En el caso de misiones espaciales
+los seis m\'etodos son considerados.
+
+El más favorecido en ambos casos es el m\'etodo de OAB. 
+Desde la primera deteccion en el 2005 \cite{Eisenstein2005},
+ha sido uno del los preferidos para obtener mediciones precisas de la
+historia de expansi\'on. Ejemplos recientes de estas mediciones
+\cite{wigglez,BOSS} para
+galaxias m\'as distantes han sido hechas por BOSS
+(\url{http://www.sdss3.org/surveys/boss.php}) y WiggleZ
+(\url{http://wigglez.swin.edu.au/site/}). Ambas son colaboraciones de
+cientos de cient\'ificos, dada la gran cantidad de las observaciones,
+reducci\'on de datos y simulaciones que deben ser hechas para obtener
+los resultados.
+
+Usando los mismos datos de las observaciones ha sido posible
+medir las DER para poner cotas sobre la funci\'on $D(t)$ que describe
+el crecimiento de estructura \cite{2014MNRAS.439.3504S}. 
+Los resultados muestran consistencia con una cosmolog\'ia LCDM donde la
+gravedad est\'a descrita por la Relatividad General, aunque los datos
+dan una leve preferencia a valores donde la interacci\'on
+gravitacional es levemente menor a las predicciones de la Relatividad
+General. 
+
+Otra v\'ia de nuestro inter\'es para acotar par\'ametros
+cosmol\'ogicos son las ruebas novedosas que van a beneficiarse de los
+grandes vol\'umenes que ser\'an observados con futuras campa\~nas
+oservacionales. Entre estos se encuentran 
+
+\begin{itemize}
+\item El efecto Alcock-Paczinsky sobre la estructura a gran escala \cite{2013arXiv1309.1162S}.
+\item Las eventos de colisiones extremas, como el Bullet Cluster o el
+  Bullet Group \cite{Bullets2010, Bullets2014}. 
+\end{itemize}
+
+
+\subsection{Campa\~nas observacionales}
+
+El objetivo de campa\~nas observacionales que empiezan en $\sim 5$
+a\~nos es observar al menos un orden de magnitud m\'as de galaxias en
+un rango de redshift $0.7<z<2.0$ de las observadas hasta ahora,
+extendiendo el rango actual $z<0.7$. Dentro de estas misiones se destacan:
+
+\begin{itemize}
+\item {\bf Dark Energy Spectroscopic Instrument (DESI)}. Empezar\'a a
+  tomar datos en el 2018. Espera tomar espectros de cerca de +20 millones de
+  galaxias utilizando el telescopio de 4 metros en el Kitt Peak
+  Observatory en Estados Unidos \cite{DESI}.
+\item {\bf 4MOST}. Empezar\'a a tomar datos en el 2019. Espera
+  tomar espectros de cerca de +20 millones de estrellas galaxias con el
+  telescopio de 4 metros VISTA en Chile. Su objetivo principal es
+  hacer ciencia de la formaci\'on de la V\'ia L\'actea \cite{4MOST}.
+\item {\bf Euclid}. Empezar\'a a tomar datos en el 2021. Ser\'a un
+  telescopio espacial de 1.2 metros. Espera tomar espectros de cerca
+  de 52 millones de galaxias. \cite{EUCLID}.
+\end{itemize}
+
+La ventaja de DESI sobre 4MOST es que estar\'a completamente dedicado
+a observar galaxias; y sobre Euclid es que tomar\'a datos 3 a\~nos
+antes. De esta manera DESI ofrece una oportunidad \'unica para hacer
+cosmolog\'ia observacional en los siguientes a\~nos. 
+
+DESI est\'a entre el 2014-2017 en la fase de planeaci\'on del survey y
+construcci\'on del instrumento. {\bf Es justamente en esta fase en la que
+este proyecto espera hacer sus contribuciones a DESI}.
+
+
+\subsection{Simulaciones para el dise\~no de DESI}
+
+En esta fase de dise\~no una de los objetivos principales es lograr la
+simulaci\'on completa del 
+instrumento, algo que se conoce como {\bf
+  end-to-end simulation}. Esto implica simular eventos como la
+secuencia en la que el telescopio apuntar\'a al cielo, c\'omo se van a
+ubicar las fibras \'opticas sobre las galaxias observadas, los
+espectros de cada una de las galaxias observadas con ruido
+instrumental realista, la toma de espectros sobre c\'amaras CCD, la
+extracci\'on de la informaci\'on hasta la deducci\'on del redsfhit de
+cada una de las galaxias observadas. 
+Luego de esto se puede aplicar
+cada m\'etodos (OAB, DER, etc) para ver con qu\'e precisi\'on se
+pueden acotar los par\'ametros cosmol\'ogicos. 
+
+Central a este esfuerzo es crear cat\'alogos de Universos ficticios a
+partir de simulaciones de N-cuerpos. 
+Esto permitir\'a hacer las
+simulaciones end-to-end realistas y al mismo tiempo entrenar los
+algoritmos que finalmente van a utilizar los datos observacionales
+para medir los datos sobre la expansi\'on del Universo. El estado del
+arte en estas simulaciones se compone por vol\'umenes c\'ubicos de
+universos  de lado $1000-10000$\hMpc
+con un n\'umero de part\'iculas entre los rangos
+$1024^3$-$7120^3$ en una cosmolog\'ia est\'andar LCDM. Estas
+simulaciones han sido hechas por diferentes grupos, entre ellas caben
+destacar LASDAMAS en Stanford
+(\url{http://lss.phy.vanderbilt.edu/lasdamas/team.html}), HorizonRun en KIAS (hecha por nuestro asesor Changbom Park y su grupo)
+(\url{http://sdss.kias.re.kr/astro/Horizon-Run23/}) y MultiDark (hecha
+por el equipo de nuestro asesor Stefan Gottloeber)
+(\url{http://www.multidark.org/MultiDark/}). Tambi\'en cabe resaltar
+la seri de de simulaciones CODECS que incluye simulaciones en
+diferentes familias de energ\'ia oscura
+(\url{http://www.marcobaldi.it/web/CoDECS_summary.html}). 
+
+En todos estos casos es un objetivo de la comunidad tener más
+volúmenes simulados, con diferentes códigos y diferentes técnicas. 
+Esto permite que los resultados computacionales sean robustos y con
+pocos sesgos por tener un número pequeño de volúmenes simulados. 
+Por esta razón nos proponemos realizar simulaciones de grandes
+volúmenes del Universo, para poder aportar al esfuerzo de la comunidad
+internacional en nuevas campañas de simulación y observación.
+
+
+
+
+
+
+
+
+
+

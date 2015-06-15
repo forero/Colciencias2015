@@ -1,0 +1,184 @@
+
+\section{Marco conceptual}
+% Aspectos conceptuales y teóricos que contextualicen el problema de
+% investigación en una temática; así como otros aspectos que sean
+% pertinentes a juicio de los proponentes. 
+
+
+El principal elemento conceptual de este proyecto es la {\bf Cosmolog\'ia
+vista a partir de la estructura del Universo a gran escala}. 
+Los principales aspectos de esta área de conocimiento se pueden
+dividir en tres ramas: teoría, simulaciones y observaciones.
+
+A continuación vamos resumir los aspectos más relevantes para nuestra
+propuesta. 
+
+
+\subsection{Teor\'ia}
+
+Desde el punto de vista te\'orico hay dos tipos de observables que nos
+dan claves sobre los contenidos y características del Universo.
+El primero es la historia de expansi\'on del Universo; el segundo es
+la evolucíon de la distribución de galaxias a gran escala.
+Ambos observables se pueden obtener a partir de mediciones de
+posiciones de millones de galaxias.
+
+La {\bf historia de expansi\'on} del Universo, parametrizada por la
+constante de Hubble dependiente del redshift H(z), dependende
+directamente del contenido de mater\'ia y energ\'ia del Universo. 
+Este
+contenido se puede serparar en tres componentes: la densidad de materia
+bari\'onica ($\Omega_b$), la densidad de materia oscura
+($\Omega_{dm}$) y la densidd de energ\'ia  oscura  ($\Omega_{DE}$), la
+cual puede variar en el tiempo dependiendo del valor de la constante
+$w$ en la ecuaci\'on de estado, $\Omega_{DE}$ donde 
+
+\begin{equation}
+\Omega_{DE}(z) = \Omega_{DE,0}(1+z)^{3(1+w)},
+\end{equation}
+%
+asumiendo que el Universo es plano
+($\Omega_b+\Omega_{dm}+\Omega_{DE}=1$) y que $w$ es una constante. 
+En esto tomamos a $\Omega_{DE}$ de manera general para una
+Energ\'ia Oscura sin asumir que se trata de una constante
+cosmol\'ogica, $\Omega_\Lambda$ con $w=-1$. 
+
+Hoy en d\'ia estos par\'ametros cosmol\'ogicos es\'an
+acotados observacionalmente cerca a los siguientes valores $\Omega_b=0.05$,
+$\Omega_{dm}=0.25$, $\Omega_{DE}=0.70$ y $w=-1$. 
+Actualmente hay mucho interés por medir con alta precisión
+$\Omega_{DE}$ y $w$.
+La razon es que estas dos cantidades est\'an directamente 
+relacionadass con  la expansi\'on acelerada del Universo.
+Explicaciones de esta aceleración pueden corresponder a una simple
+constante cosmol\'ogica o pueden ser la evidencia de que Relatividad
+General no es la teor\'ia correcta para la gravedad 
+\cite{2014arXiv1401.0046M}.
+
+Por otro lado, el {\bf crecimiento de estructura a gran escala} depende
+principalmente de dos cosas: las fluctuaciones iniciales en el campo de densidad
+de materia en las \'epocas tempranas del Universo y de la teor\'ia de
+la gravedad que hace que esas fluctuaciones se amplifiquen.
+En este contexto la cantidad de importancia central es el contraste de
+densidad $\delta({\bf  x},t)\equiv\rho({\bf r},t)/\bar{\rho(r)}-1$ de
+la materia oscura. 
+En el r\'egimen lineal este crecimiento está descrito 
+por la siguiente ecuaci\'on diferencial 
+
+\begin{equation}
+\ddot{D} + 2H(z)\dot{D}- \frac{3}{2}\Omega_mH_{0}^2(1+z)^3D=0,
+\end{equation}
+%
+donde $H_0$ es la constante de Hubble en el presente y $D(t)$ es la
+funci\'on de crecimiento. Incluso en el r\'egimen no lineal el
+contraste de densidad tambi\'en depende de esta funci\'on $D(t)$.  
+
+Lo interesante es que diferentes modelos de la gravedad
+(entre ellos la Relatividad General) hacen predicciones sobre el
+comportamiento de esta funci\'on $D(t)$. 
+De esta manera, una estrategia posible para probar teorias de gravedad
+modificada es medir al mismo tiempo la historia de expansi\'on y la
+historia de crecimiento de estructuras para ver si dan valores
+consistentes de $H(z)$ y de $w$ \cite{2014arXiv1401.0046M}.  
+
+En resumen, la teor\'ia predice que mediciones de la distribuci\'on de
+galaxias tienen informaci\'on para poner a prueba la teoria de la
+Relatividad General y medir la composici\'on del Universo.
+
+\subsection{Simulaciones}
+
+Aunque la decripci\'on anal\'itica esbozada anteriormente
+permite acercarse a varios fen\'omenos del crecimiento de estructura,
+una descripci\'on detallada solamente ha sido posible a trav\'es de
+las simulaciones computacionales. 
+
+
+En el caso de simulaciones para la cosmolog\'ia est\'andar $\Lambda$
+Cold Dark Matter ($\Lambda$CDM) se sigue un aproximaci\'on en la cual
+solamente se simula la componente oscura y no la luminosa, dado que
+la primera domina la din\'amica del sistema y es suficiente para tener
+una primera aproaximación sobre la distribución espacial de las
+galaxias, el observable más importante para nuestro proyecto.
+
+En estas simulaciones se toma un volumen computacional de un volumen
+representativo del Universo.
+La distribuci\'on de materia oscura es discretizada en part\'iculas
+computacionales con posiciones y velocidades que pueden evolucionar en
+el tiempo.  
+Esta forma general de realizar los c\'alculos ha sido
+perfeccionada durante los \'ultimos treinta a\~nos de investigaci\'on
+en el tema de formaci\'on de estructura en un Universo domiando por la
+materia oscura
+\cite{1985ApJ...292..371D,1999ApJ...522...82K,2005Natur.435..629S}. Es
+importante enfatizar que modelos de gravedad modificada (que no
+trataremos en este proyecto) requieren métodos diferentes.
+
+Como en todo experimento num\'erico hay dos cantidades centrales para
+la descripci\'on del sistema: las condiciones iniciales y las reglas
+para la evoluci\'on temporal del sistema.  
+Las condiciones iniciales est\'an definen las posiciones y velocidades
+iniciales de las part\'iculas computacionales. 
+En este caso los desplazamientos de las part\'iculas
+con respecto a una distribuci\'on homog\'ena de part\'iculas están
+relacionadas con parámetros cosmológicos y el tipo de materia oscura
+que se considera.
+Una vez las posiciones iniciales est\'an determinadas se
+determinan las velocidades iniciales, usualmente a trav\'es de la
+aproximaci\'on de Zeldovich aunque es posible imponer estas
+condiciones iniciales a trav\'es de otras aproximaciones perturbativas
+\cite{2014MNRAS.439.3630W}. 
+
+La simulaci\'on sigue entonces la evoluci\'on de las posiciones y
+velocidades de las part\'iculas durante la historia del
+Universo. En el rango de evoluci\'on no lineal se forman
+sobre-densidades de materia oscura (halos) en
+donde  las galaxias deberian formarse y evolucionar. 
+
+En este punto es posible entonces pasar a una
+descripci\'on de la distribuci\'on de materia en la simulaci\'on a
+partir de las posiciones  velocidades y masas de estos {\bf halos de materia
+  oscura}. Estos objetos serán los centrales al momento de vincular
+las predicciones de los modelos con las observaciones. Estos halos
+sirven en las construcci\'on de {\bf cat\'alogos ficticios} que se
+son comparables con mapas de la distribuci\'on de galaxias en el
+Universo.
+
+Para la a relizaci\'on de simulaciones  que incluyan
+efectos de diferentes modelos de energ\'ia oscura hay tres
+posibilidades: campos homog\'eneos de energ\'ia oscura, campos
+inhomog\'eneos de energ\'ia oscura y modelos con de inhomogeneidad a
+gran escala \cite{2012PDU.....1..162B}. En este proyecto nos
+centraremos en los modelos $\Lambda$CDM y en los homog\'eneos de energ\'ia
+oscura que se pueden incluir en simulaciones hechas con la maquinaria
+$\Lambda$CDM a trav\'es de una parametrizaci\'on para la evoluci\'on
+del t\'ermino $\Omega_{DE}(z)$.
+
+\subsection{Observaciones}
+
+Las observaciones del Universo a gran escala empezaron a tener un rol
+central en la astronom\'ia observacional y en la cosmolog\'ia con dos
+colaboraciones: el Sloan Digital Sky Survey (SDSS) \cite{SDSS} y el Two Degree
+Field Galaxy Redshift Survey (2dFGRS) \cite{2dF}. 
+El objetivo principal de estas campa\~nas observacionales fue tomar
+espectros de cerca de un mill\'on de galaxias del Universo local sobre
+una gr\'an \'area del cielo. 
+A partir de estas observaciones de la estructura del Universo a gran
+escala se pueden inferir diferentes par\'ametros cosmol\'ogicos.
+
+Dentro de las mediciones m\'as importantes a partir de estas dos misiones
+ha sido el de la densidad de materia cosmol\'ogica $\Omega_m$
+\cite{2001Natur.410..169P} y el pico en la funci\'on de
+correlaci\'on correspondiente a la Oscilacion Ac\'ustica de Bariones
+(OAB) \cite{Eisenstein2005}. 
+Observaciones recientes de la OAB son las que proveeen una de las
+form\'as mas competitivas de acotar la historia de expansi\'on del
+Universo \cite{2014MNRAS.441...24A}. 
+
+En cuanto a las mediciones del crecimiento de estructura (cotas sobre
+la forma de la funci\'on $D(t)$ mencionada en la secci\'on sobre
+teor\'ia) estas se hacen a trav\'es de la cuantificaci\'on de la
+distrbuci\'on de las posiciones de las galaxias en la direcci\'on
+radial y perpendicular al observador \cite{2014MNRAS.439.3504S},
+aunque los resultados actuales no tienen la precisión suficiente 
+para distinguir entre el modelo est\'andar y teor\'ias
+modificadas de la gravedad. 
