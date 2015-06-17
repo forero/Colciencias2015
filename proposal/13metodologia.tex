@@ -21,20 +21,20 @@ responsables ser\'an:
 \item Asistentes t\'ecnicos de Uniandes \tecn.
 \end{itemize}
 
-
 A continuaci\'on relacionamos cada uno de los objetivos espec\'ificos
-con la lista de tareas y sus responsables. En los casos
-donde se espera colaborac\'ion de los asesores externos est\'a
-expresado de manera expl\'icita.
+con la lista de tareas y sus responsables. 
 
 \subsection*{T1. Infraestructura computacional para procesar simulaciones cosmol\'ogicas en Uniandes.} 
 \begin{itemize}
-\item[T1.1] \tecn Compra, instalaci\'on y mantenimiento de 12TB espacio de disco
+\item[T1.1] \tecn 
+Compra, instalaci\'on y mantenimiento de 12TB espacio de disco
   con backup para almacenar los datos originales de las simulaciones.
-\item[T1.2] \tecn Compra, instalaci\'on y mantenimiento de un blade de
+\item[T1.2] \tecn 
+  Compra, instalaci\'on y mantenimiento de un blade de
   procesamiento con 24 procesadores con 512GB para poder analizar y
   postprocesar las simulaciones.
-\item[T1.3] \tecn\prof Transferir datos y sofware de la colaboraci\'on
+\item[T1.3] \tecn\prof 
+  Transferir datos y sofware de la colaboraci\'on
   DESI a las m\'aquinas de Uniandes para hacer pruebas de todos los
   pasos siguientes antes de pasar a una implementaci\'on definitiva en
   los clusters computacionales de la colaboraci\'on DESI. 
@@ -42,24 +42,23 @@ expresado de manera expl\'icita.
 
 \subsection*{T2. Analizar relaci\'on entre materia oscura y luminosidad para galaxias del tipo ELG, LRG y QSO}
 \begin{itemize}
-\item[T4.1] \gradA\prof 
+\item[T2.1] \gradA\prof 
   Escribir software para la generaci\'on de cat\'alogos
   ficticios de galaxias a partir de alguna relaci\'on anal\'itica
   entre masa de halo de materia oscura y luminosidad.
-
-\item[T4.2] \gradA\prof 
+\item[T2.2] \gradA\prof 
   Escribir software que haga lo comparaci\'on de los cat\'alogos
-  anteriores con datos observacinales.
+  anteriores con datos observacionales.
 \end{itemize}
 
 \subsection*{T3. Encontrar los mejores par\'ametros de modelos
   te\'oricos para generar cat\'alogos ficticios de ELG, LRG y QSO.}
 \begin{itemize}
-\item[T4.1] \gradA\prof 
-Explorar el espacio de par\'ametros 
-\item[T4.2] \gradA\prof 
-  Escribir software que haga lo comparaci\'on de los cat\'alogos
-  anteriores con datos observacinales.
+\item[T3.1] \gradA\prof  
+  Explorar el espacio de par\'ametros 
+\item[T3.2] \gradA\prof  
+  Escribir software que haga lo comparaci\'on
+  de los cat\'alogos anteriores con datos observacinales.
 \end{itemize}
 
 
@@ -77,10 +76,10 @@ Explorar el espacio de par\'ametros
 \subsection*{T5. Secuencias de observaci\'on para el experimento DESI}
 \begin{itemize}
 \item[T5.1] \prof Escribir software que simule la secuencia de observaci\'on
-  de DESI sobre un cat\'alog de galaxias generado aleatoriamente. \bob.
+  de DESI sobre un cat\'alog de galaxias generado aleatoriamente. 
 \item[T5.2] \prof Escribir software que simule la secuencia de observaci\'on
   de DESI sobre un cat\'alogo de galaxias generado a partir de una
-  simulaci\'on de N-cuerpos. \bob.
+  simulaci\'on de N-cuerpos. 
 \end{itemize}
 
 \subsection*{T6. Distribuci\'on de fibras \'opticas en el experimento DESI}
@@ -88,40 +87,59 @@ Explorar el espacio de par\'ametros
 \item[T6.1] \prof Escribir software que simule la asignaci\'on de fibras
   \'opticas sobre un cat\'alog de galaxias generadas aleatoriamente.  \bob.
 \item[T6.2] \prof Escribir software que simule la asignaci\'on de fibras
-  \'opticas sobre un cat\'alog de galaxias generado a partir de una
-  simulaci\'on de N-cuerpos. \bob.
+  \'opticas sobre un cat\'alogo de galaxias generado a partir de una
+  simulaci\'on de N-cuerpos. 
 \end{itemize}
 
-\subsection*{T7. Simulacion completa (end-to-end) del experimento DESI.}
+\subsection*{T7. Probabilidad de medir un redshift}
 \begin{itemize}
-\item[T7.1] \prof Integrar en la base de c\'odigo de DESI el software para
-  preparar cat\'alogos ficticios de galaxias aleatorios. \bob. Viaje a Berkeley por 2 semanas. 
-\item[T7.2] \gradA\prof Integrar en la base de c\'odigo de DESI el software para
+\item[T7.1] \prof Escribir sofware que calcule la probabilidad de
+  medir con \'exito un redshift con \'exito dependiendo del tipo de
+  galaxia, su luminosidad, las condiciones del cielo y el instrumento.
+\end{itemize}
+
+\subsection*{T8. Simulacion de un cat\'alogo que incluye la
+  probabilidad de medir un redshift.}
+\begin{itemize}
+\item[T8.1] \prof Escribir software que calcule un cat\'alogo de galaxias
+  generado a partir de una simulaci\'on de N-cuerpos teniendo en
+  cuenta las diferentes probabilidades de medir un redshift.
+\end{itemize}
+
+\subsection*{T9. Integrar el software de todos los pasos anteriores}
+\begin{itemize}
+\item[T9.1] \gradB\prof Integrar en la base de c\'odigo de DESI el software para
   preparar cat\'alogos ficticios de galaxias a partir de simulaciones
-  de N-cuerpos. \bob. Viaje a Berkeley por 2 semanas.
-\item[T7.3] \prof Integrar en la base de c\'odigo de DESI el software para
-  definir las secuencias de observaci\'on del experimento. \bob.
-\item[T7.4] \prof Integrar el c\'odigo completo de simulaci\'on end-to-end
-  de DESI. \bob. 
-\item[T7.5] \prof Producir simulaciones completas de simulaci\'on end-to-end
-  de DESI. Desde las observaciones hasta la estimaci\'on de redshifts
-  de galaxias observadas. \bob. Visita a Berkeley por 2 semanas.
+  de N-cuerpos. 
+\item[T9.2] \gradB\prof Integrar en la base de c\'odigo de DESI el software para
+  definir las secuencias de observaci\'on del experimento.
+
+\item[T9.3] \gradB\prof Integrar en la base de c\'odigo de DESI el software para
+  definir la asignaci\'on de fibras \'opticas.
+\item[T9.4] \gradB\prof Integrar el c\'odigo completo de simulaci\'on end-to-end
+  de DESI. 
 \end{itemize}
 
-
-
-\subsection*{T10. Efecto de RSD sobre estad\'isticas de clustering}
+\subsection*{T10. Producir cat\'alogos de galaxias con todos los
+  efectos instrumentales de DESI}
 \begin{itemize}
-\item[T10.1] \gradB
-  Cuantificar el efecto de RSD sobre cat\'alogos ficticios de
-  galaxias creados a partir de simulaciones de N-cuerpos en
-  cosmolog\'ias LCDM. 
-\item[T10.2] \gradB Cuantificar el efecto de RSD sobre cat\'alogos ficticios de
-  galaxias creados a partir de simulaciones de N-cuerpos en
-  cosmolog\'ias $\omega$CDM. 
-\item[T10.3] \gradB Cuantificar el efecto de RSD sobre los cat\'alogos de
-  posiciones y redshift creados a partir de la herramienta de
-  simulaci\'on end-to-end de DESI.\bob Visita a Berkeley por 2 semanas.
+\item[T10.1] \gradB\prof Producir simulaciones completas de
+  simulaci\'on end-to-end de DESI. Desde las observaciones hasta la
+  estimaci\'on de redshifts de galaxias observadas. 
+\end{itemize}
+
+\subsection*{T11. Efectos instrumentales sobre mediciones OAB}
+\begin{itemize}
+\item[T11.1] \gradB Cuantificar el efecto instrumental sobre
+  mediciones de Oscilaciones Ac\'usticas de Bariones usando
+  cat\'alogos de galaxias simlados.
+\end{itemize}
+
+\subsection*{T12. Efectos instrumentales sobre mediciones DER}
+\begin{itemize}
+\item[T12.1] \gradB Cuantificar el efecto instrumental sobre
+  mediciones de Distorsiones en el Espacio de Redshift
+  cat\'alogos de galaxias simlados.
 \end{itemize}
 
 
