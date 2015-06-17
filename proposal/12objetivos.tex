@@ -5,14 +5,19 @@
 % problema o necesidad y se inicia con un verbo en modo infinitivo, es
 % medible, alcanzable y conlleva a una meta. 
 
-Cuantificar la influencia de los par\'ametros cosmol\'ogicos en la
-  estructura del Universo a gran escala con herramientas y m\'etodos competitivos y \'utiles para la comunidad internacional en Cosmolog\'ia. Para ello nos proponemos:
+Simular cat\'alogos de galaxias del Universo a gran escala que sigan
+las condiciones de observabilidad del experimento DESI.
 
 \begin{enumerate}
-\item  Realizar simulaciones de formaci\'on de estructura a gran escala en el Universo.
-\item Contribuir al dise\~no de DESI (Dark Energy Spectroscipic Instrumet) un experimento de siguiente generaci\'on para la medici\'on de la historia de la expansi\'on del Universo. 
-\item Utilizar datos observacionales de la distribuci\'on de galaxias a gran escala para acotar valores de par\'ametros cosmol\'ogicos.
-
+\item  Utilizar datos observacionales de la distribuci\'on de galaxias
+  para vincular la masa de halos de materia oscura a propiedades
+  observables de una galaxia.
+\item Crear un cat\'alogo ficticio de galaxias en escalas de $3$ Gpc$^3$
+  a partir de simulaciones de materia oscura del universo a gran escala.
+\item Escribir rutinas que simulen el proceso de observaci\'on de
+  DESI.
+\item Crear un cat\'alogo ficticio de galaxias que incluyan los
+  efectos observacionales de la instrumentaci\'on DESI.
 \end{enumerate}
 
 El software generado por el proyecto {\bf CoCO} estar\'a a disponibilidad  de la comunidad astron\'omica internacional a trav\'es de repositorios p\'ublicos. En el caso de los datos se conservar\'an en discos duros con backup y estar\'an disponibles para la comunidad astron\'omica internacional bajo solicitud. 
@@ -26,57 +31,38 @@ El software generado por el proyecto {\bf CoCO} estar\'a a disponibilidad  de la
 
 
 \begin{enumerate}
-\item Desarrollar la Infraestructura computacional necesaria para
-  hacer simulaciones cosmol\'ogicas; incluyendo la adaptaci\'on o
-  desarrollo de componentes de software necesarias y la compra del
-  hardware apropiado. Para esto prevemos la compra de 6TB de memoria
-  con backup y un blade de 24 procesadores y 512GB de RAM para poder
-  tener capacidad de procesamiento de simulaciones dedicada
-  exclusivamente a \coco.  
+\item Adquirir acceso a las simulaciones cosmol\'ogicas de materia
+  oscura disponibles dentro de la colaboraci\'on DESI.
 
-\item Hacer y analizar simulaciones de formaci\'on de estructura a
-  gran escala en Universos dominados por materia oscura en una
-  cosmolog\'ia LCDM. Estas simulaciones tendr\'an $1000$ \hMpc de lado
-  con $1024^3$ part\'iculas. Por cada simulaci\'on se guardar\'an en
-  disco $5$ snapshots con las posiciones y velocidades de todas las
-  part\'iculas. Esto representa cerca de $300$ GB en espacio de disco
-  y cerca de 15000 horas de CPU (cerca de 10 d\'ias sobre 64
-  procesadores). Esta simulaci\'on utilizar\'ia cerca de 120GB de RAM
-  al momento de correr. Estas condiciones son realizables en el
-  cluster de la Universidad de los Andes, el cual tiene cerca de $500$
-  procesadores y cerca de $1$TB de RAM distribuida.
+\item Analizar las anteriores simulaciones parar asignar luminosidades
+  a los halos de materia oscura.
 
-\item Hacer y analizar simulaciones de formaci\'on de estructura a
-  gran escala en Universos dominados por materia oscura en
-  cosmolog\'ias $w$CDM con las mismas condiciones t\'ecnicas de las
-  simulaciones LCDM. 
+\item Encontrar los mejores par\'ametros que asignen luminosidad a
+  materia oscura para reproducir las propiedades (funci\'on de
+  correlaci\'on y distribuci\'on en redshift) de las galaxias que
+  ser\'a observadas por DESI (LRG, ELG, QSO).
 
-\item Construir cat\'alogos ficticios de galaxias; incluyendo la
-  adpataci\'on o desarrollo de componentes de sofware necesarias.
+\item Construir cat\'alogos ficticios de galaxias (LRG, ELG, QSO) a
+  partir de las simulaciones y los par\'ametros descritos
+  anteriormente.
 
-\item Colaborar en el dise\~no del experimento DESI, probando
-  diferentes Secuencias de observaci\'on del cielo;   incluyendo la
-  adaptaci\'on o desarrollo de componentes de software necesarias. 
+\item Escribir/adaptar software que describa la cadencia del
+  telescopio DESI sobre el \'area del cielo a ser observada.
 
-\item Colaborar en el dise\~no del experimento DESI, probando
-  diferentes algoritmos de distribuci\'o de fibras \'opticas sobre
-  galaxias; incluyendo la adaptaci\'on o desarrollo de compoentes de
-  software necesarias. 
+\item Escribir/adaptar software que describe al asignaci\'on de fibras
+  \'opticas a las galaxias observables por DESI.
 
-\item Colaborar en el dise\~no del experimento DESI, ayudando en la
-  integraci\'on del sofware que simula el experimento de manera
-  completa, desde las observaciones hasta la determinaci\'on de los
-  redshifts de las galaxias observadas.
+\item Escribir/adaptar sofware que describe la eficiencia de obtener
+  una medici\'on confiable de redshift una vez ha sido apuntado con
+  una fibra \'optica.
 
-\item Cuantificar el efecto Alcock-Paczinsky sobre el beta-skeleton
-  construido sobre la distribuci\'on tridimensional de galaxias. 
+\item Escribir/adaptar software que simula el cat\'alogo final de
+  galaxias ficticias observadas por DESI.
 
-\item Cuantificar las estad\'isiticas de pares de velocidades de
-  encuentros extremos de pares de c\'umuloes de galaxias en
-  cosmolog\'ias LCDM y $w$CDM.
-
-\item Cuantificar el efecto de Redshift Space Distortions sobre las
-  estad\'isticas de clustering de galaxias.  
+\item Escribir/adaptar sofware que vincula todos los pasos anteriors
+  para simular de manera completa el experimento DESI hasta llegar a
+  la creaci\'on de un cat\'alogo de galaxias que describe la
+  estructura del Universo a gran escala.
 \end{enumerate}
 
 
